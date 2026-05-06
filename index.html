@@ -3,30 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Elétrica ROMA | Eletrica Automotiva e Ar Condicionado</title>
+    <title>Auto Elétrica ROMA | Elétrica Automotiva e Ar Condicionado</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="Logo">
-            <h1>Auto Elétrica ROMA</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="#serviços">Serviços</a></li>
-                
-            </ul>
-        </nav>
 
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">&#9889;</span>
+                <div class="logo-texto">
+                    <h1>Auto Elétrica ROMA</h1>
+                    <p class="logo-slogan">Elétrica Automotiva &amp; Ar Condicionado</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="cadastro.html" class="btn-nav">Agendar Diagnóstico</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="sobre" class="caixa de texto">
-            <h2>Especialistas em Eletrica Automotiva e Ar Condicionado</h2>
-            <p>Tradição e agilidade para garantir que o seu veículo não fique parado. Atendemos carros de passeio, frotas e oferecemos socorro rápido.</p>
+
+        <section class="hero">
+            <div class="hero-conteudo">
+                <h2>Especialistas em Elétrica Automotiva</h2>
+                <p>Tradição e agilidade para garantir que o seu veículo não fique parado. Atendemos carros de passeio, frotas e oferecemos socorro rápido.</p>
+                <div class="hero-botoes">
+                    <a href="cadastro.html" class="btn-primario">Agendar Diagnóstico</a>
+                    <a href="#servicos" class="btn-secundario">Nossos Serviços</a>
+                </div>
+            </div>
         </section>
+
+        <section id="servicos" class="servicos">
+            <div class="container">
+                <h2 class="titulo-secao">Nossos Serviços</h2>
+                <p class="subtitulo-secao">Soluções completas para o sistema elétrico do seu veículo</p>
+                <div class="cards-grid">
+                    <article class="card">
+                        <div class="card-icone icone-eletrica">&#9889;</div>
+                        <h3>Elétrica Automotiva</h3>
+                        <p>Diagnóstico e reparo completo do sistema elétrico. Resolução de falhas em fiação, fusíveis, módulos e muito mais.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icone icone-ar">&#10052;</div>
+                        <h3>Ar Condicionado</h3>
+                        <p>Manutenção, recarga e reparo do ar condicionado automotivo. Conforto térmico garantido em qualquer estação.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icone icone-bateria">&#128267;</div>
+                        <h3>Baterias e Alternadores</h3>
+                        <p>Troca, instalação e teste de baterias e alternadores. Mantenha o seu veículo sempre energizado e funcionando.</p>
+                    </article>
+                    <article class="card">
+                        <div class="card-icone icone-socorro">&#128663;</div>
+                        <h3>Socorro Rápido</h3>
+                        <p>Atendimento emergencial para veículos com pane elétrica. Nossa equipe vai até você onde você estiver.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="sobre">
+            <div class="container sobre-grid">
+                <div class="sobre-imagem">
+                    <img src="https://placehold.co/520x400/1a1a2e/f5a623?text=Auto+Eletrica+ROMA" alt="Oficina Auto Elétrica ROMA">
+                </div>
+                <div class="sobre-texto">
+                    <h2 class="titulo-secao">Sobre Nós</h2>
+                    <p>A <strong>Auto Elétrica ROMA</strong> é uma empresa especializada em elétrica automotiva e ar condicionado, com anos de experiência atendendo a comunidade local.</p>
+                    <p>Nossa missão é oferecer um serviço <span class="destaque">rápido, honesto e de qualidade</span>, garantindo que o seu veículo — e a sua rotina — não parem por problemas elétricos.</p>
+                    <ul class="lista-diferenciais">
+                        <li>Equipe treinada e qualificada</li>
+                        <li>Diagnóstico moderno e preciso</li>
+                        <li>Atendimento a frotas e empresas</li>
+                        <li>Orçamento sem compromisso</li>
+                    </ul>
+                    <a href="cadastro.html" class="btn-primario">Agende seu diagnóstico</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="galeria">
+            <div class="container">
+                <h2 class="titulo-secao">Nossa Estrutura</h2>
+                <p class="subtitulo-secao">Estrutura completa para atender você com excelência</p>
+                <div class="galeria-grid">
+                    <figure>
+                        <img src="https://placehold.co/400x280/2d2d44/ffffff?text=Oficina" alt="Oficina da Auto Elétrica ROMA">
+                        <figcaption>Nossa Oficina</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://placehold.co/400x280/e94560/ffffff?text=Equipamentos" alt="Equipamentos modernos da Auto Elétrica ROMA">
+                        <figcaption>Equipamentos Modernos</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="https://placehold.co/400x280/f5a623/1a1a2e?text=Atendimento" alt="Atendimento ao cliente na Auto Elétrica ROMA">
+                        <figcaption>Atendimento de Qualidade</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contato">
+            <div class="container">
+                <h2 class="titulo-secao">Entre em Contato</h2>
+                <div class="contato-grid">
+                    <div class="contato-info">
+                        <div class="info-item">
+                            <span class="info-icone">&#128205;</span>
+                            <div>
+                                <h4>Endereço</h4>
+                                <p>Rua Exemplo, 123 - Centro, Cidade - SP</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icone">&#128222;</span>
+                            <div>
+                                <h4>Telefone</h4>
+                                <p><a href="tel:+5511999999999">(11) 99999-9999</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icone">&#9993;</span>
+                            <div>
+                                <h4>E-mail</h4>
+                                <p><a href="mailto:contato@autoeletricaroma.com.br">contato@autoeletricaroma.com.br</a></p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icone">&#128336;</span>
+                            <div>
+                                <h4>Horário de Atendimento</h4>
+                                <p>Seg a Sex: 08h às 18h<br>Sábado: 08h às 13h</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contato-cta">
+                        <h3>Precisa de atendimento?</h3>
+                        <p>Agende seu diagnóstico agora e nossa equipe entrará em contato o mais rápido possível. Resolvemos problemas elétricos de todos os tipos de veículo.</p>
+                        <a href="cadastro.html" class="btn-primario">Agendar Diagnóstico</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
-    
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-marca">
+                <span class="footer-icone">&#9889;</span>
+                <h3>Auto Elétrica ROMA</h3>
+                <p>Especialistas em elétrica automotiva e ar condicionado. Tradição e qualidade a serviço da comunidade.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="cadastro.html">Agendar Diagnóstico</a></li>
+                </ul>
+            </div>
+            <div class="footer-equipe">
+                <h4>Equipe de Desenvolvimento</h4>
+                <ul>
+                    <li><a href="https://marinoleo96351.github.io/Curriculo-leo-marino---front-end-mat-ria/" target="_blank" rel="noopener noreferrer">Leonardo Marino Scarparo Silva</a></li>
+                    <li><a href="https://vinifandretta.github.io/Curriculo_HTML/" target="_blank" rel="noopener noreferrer">Vinicius Luiz Andretta Ferracini</a></li>
+                    <li><a href="https://arthurhenrique2006-stack.github.io/Curriculo_ArthurHTML/" target="_blank" rel="noopener noreferrer">Arthur Henrique de Melo Almeida</a></li>
+                </ul>
+                <p class="footer-ra">Grupo 4 &mdash; RA: 2707012 | 2707110 | 2706920</p>
+            </div>
+        </div>
+        <div class="footer-rodape">
+            <p>&copy; 2025 Auto Elétrica ROMA. Todos os direitos reservados.</p>
+            <p>Programação Web Front-end &mdash; Grupo 4</p>
+        </div>
+    </footer>
+
 </body>
 </html>
