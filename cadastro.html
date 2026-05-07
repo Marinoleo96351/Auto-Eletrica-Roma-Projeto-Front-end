@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Diagnóstico | Auto Elétrica ROMA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-icon">&#9889;</span>
+                <div class="logo-texto">
+                    <h1>Auto Elétrica ROMA</h1>
+                    <p class="logo-slogan">Elétrica Automotiva &amp; Ar Condicionado</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html#sobre">Sobre Nós</a></li>
+                    <li><a href="index.html#servicos">Serviços</a></li>
+                    <li><a href="index.html#galeria">Galeria</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                    <li><a href="cadastro.html" class="btn-nav ativo">Agendar Diagnóstico</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="pagina-topo">
+            <div class="container">
+                <h2>Agendar Diagnóstico</h2>
+                <p>Preencha o formulário e nossa equipe entrará em contato para confirmar o agendamento.</p>
+            </div>
+        </section>
+
+        <section class="cadastro-section">
+            <div class="container">
+                <div class="form-wrapper">
+
+                    <div class="form-info">
+                        <h3>Por que agendar?</h3>
+                        <ul>
+                            <li>&#10003; Atendimento rápido e eficiente</li>
+                            <li>&#10003; Diagnóstico preciso com equipamentos modernos</li>
+                            <li>&#10003; Orçamento sem compromisso</li>
+                            <li>&#10003; Equipe treinada e qualificada</li>
+                            <li>&#10003; Atendimento a carros de passeio e frotas</li>
+                        </ul>
+                        <div class="form-contato-rapido">
+                            <p><strong>Prefere ligar?</strong></p>
+                            <p><a href="tel:+5511999999999">(11) 99999-9999</a></p>
+                        </div>
+                    </div>
+
+                    <form action="login.html" method="get" class="form-cadastro">
+                        <h3>Dados do Agendamento</h3>
+
+
+                        <div class="form-grupo">
+                            <label for="nome">Nome Completo <span class="obrigatorio">*</span></label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                        </div>
+
+                        <div class="form-linha">
+                            <div class="form-grupo">
+                                <label for="email">E-mail <span class="obrigatorio">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                            </div>
+                            <div class="form-grupo">
+                                <label for="telefone">Telefone <span class="obrigatorio">*</span></label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                            </div>
+                        </div>
+
+                        <div class="form-linha">
+                            <div class="form-grupo">
+                                <label for="veiculo">Modelo do Veículo <span class="obrigatorio">*</span></label>
+                                <input type="text" id="veiculo" name="veiculo" placeholder="Ex: Honda Civic 2020" required>
+                            </div>
+                            <div class="form-grupo">
+                                <label for="placa">Placa do Veículo</label>
+                                <input type="text" id="placa" name="placa" placeholder="Ex: ABC-1234">
+                            </div>
+                        </div>
+
+                        <div class="form-grupo">
+                            <label for="servico">Tipo de Serviço <span class="obrigatorio">*</span></label>
+                            <select id="servico" name="servico" required>
+                                <option value="">Selecione o tipo de serviço</option>
+                                <option value="eletrica">Elétrica Automotiva</option>
+                                <option value="ar-condicionado">Ar Condicionado</option>
+                                <option value="bateria">Bateria / Alternador</option>
+                                <option value="socorro">Socorro Rápido</option>
+                                <option value="manutencao">Manutenção Preventiva</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-linha">
+                            <div class="form-grupo">
+                                <label for="data">Data Preferencial <span class="obrigatorio">*</span></label>
+                                <input type="date" id="data" name="data" required>
+                            </div>
+                            <div class="form-grupo">
+                                <label for="horario">Período Preferencial</label>
+                                <select id="horario" name="horario">
+                                    <option value="">Selecione um período</option>
+                                    <option value="manha">Manhã (08h - 12h)</option>
+                                    <option value="tarde">Tarde (12h - 18h)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-grupo">
+                            <label for="descricao">Descrição do Problema</label>
+                            <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva o problema que está enfrentando com o seu veículo..."></textarea>
+                        </div>
+
+                        <div class="form-divisor">
+                            <span>Dados de Acesso</span>
+                        </div>
+
+                        <div class="form-linha">
+                            <div class="form-grupo">
+                                <label for="senha">Senha <span class="obrigatorio">*</span></label>
+                                <input type="password" id="senha" name="senha" placeholder="Crie uma senha" required>
+                            </div>
+                            <div class="form-grupo">
+                                <label for="confirmar-senha">Confirmar Senha <span class="obrigatorio">*</span></label>
+                                <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Repita a senha" required>
+                            </div>
+                        </div>
+
+                        <p class="form-nota"><span class="obrigatorio">*</span> Campos obrigatórios</p>
+
+                        <button type="submit" class="btn-primario btn-submit">Cadastrar e Agendar</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-marca">
+                <span class="footer-icone">&#9889;</span>
+                <h3>Auto Elétrica ROMA</h3>
+                <p>Especialistas em elétrica automotiva e ar condicionado. Tradição e qualidade a serviço da comunidade.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="index.html#sobre">Sobre Nós</a></li>
+                    <li><a href="index.html#servicos">Serviços</a></li>
+                    <li><a href="index.html#galeria">Galeria</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                    <li><a href="cadastro.html">Agendar Diagnóstico</a></li>
+                </ul>
+            </div>
+            <div class="footer-equipe">
+                <h4>Equipe de Desenvolvimento</h4>
+                <ul>
+                    <li><a href="https://marinoleo96351.github.io/Curriculo-leo-marino---front-end-mat-ria/" target="_blank" rel="noopener noreferrer">Leonardo Marino Scarparo Silva</a></li>
+                    <li><a href="https://vinifandretta.github.io/Curriculo_HTML/" target="_blank" rel="noopener noreferrer">Vinicius Luiz Andretta Ferracini</a></li>
+                    <li><a href="https://arthurhenrique2006-stack.github.io/Curriculo_ArthurHTML/" target="_blank" rel="noopener noreferrer">Arthur Henrique de Melo Almeida</a></li>
+                </ul>
+                <p class="footer-ra">Grupo 4 &mdash; RA: 2707012 | 2707110 | 2706920</p>
+            </div>
+        </div>
+        <div class="footer-rodape">
+            <p>&copy; 2025 Auto Elétrica ROMA. Todos os direitos reservados.</p>
+            <p>Programação Web Front-end &mdash; Grupo 4</p>
+        </div>
+    </footer>
+
+</body>
+</html>
