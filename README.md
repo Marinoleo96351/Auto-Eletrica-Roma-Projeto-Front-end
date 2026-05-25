@@ -53,5 +53,5 @@ Auto-Eletrica-Roma-Projeto-Front-end/
 
 ## Links
 
-- **GitHub Pages:** *(link a ser adicionado após publicação)*
-- **Vídeo de apresentação:** *(link a ser adicionado)*
+- **GitHub Pages:** *(https://marinoleo96351.github.io/Auto-Eletrica-Roma-Projeto-Front-end/)*
+- **Vídeo de apresentação:** *((https://drive.google.com/file/d/1prqsEu4U7ROLIEfp3KoYNs0s6m-47c9Q/view?usp=sharing))*
