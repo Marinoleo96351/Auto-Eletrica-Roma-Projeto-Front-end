@@ -37,10 +37,10 @@ ul {
 /* ===== VARIÁVEIS DE COR ===== */
 :root {
     --cor-primaria:         var(--cor-primaria);
-    --cor-primaria-deep:    #0f3460;
+    --cor-primaria-deep:    var(--cor-primaria-deep);
     --cor-footer:           #0d0d1a;
-    --cor-acento:           #e94560;
-    --cor-acento-hover:     #c73650;
+    --cor-acento:           var(--cor-acento);
+    --cor-acento-hover:     var(--cor-acento-hover);
     --cor-destaque:         #f5a623;
     --cor-fundo:            #ffffff;
     --cor-fundo-claro:      #f4f6f8;
@@ -71,7 +71,7 @@ ul {
     display: block;
     width: 56px;
     height: 4px;
-    background-color: #e94560;
+    background-color: var(--cor-acento);
     margin-top: 10px;
 }
 
@@ -82,14 +82,14 @@ ul {
 }
 
 .destaque {
-    color: #e94560;
+    color: var(--cor-acento);
     font-weight: 500;
 }
 
 /* ===== BOTÕES ===== */
 .btn-primario {
     display: inline-block;
-    background-color: #e94560;
+    background-color: var(--cor-acento);
     color: #ffffff;
     font-family: 'Oswald', Arial, sans-serif;
     font-size: 1rem;
@@ -98,14 +98,14 @@ ul {
     letter-spacing: 1px;
     padding: 14px 32px;
     border-radius: 4px;
-    border: 2px solid #e94560;
+    border: 2px solid var(--cor-acento);
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .btn-primario:hover {
-    background-color: #c73650;
-    border-color: #c73650;
+    background-color: var(--cor-acento-hover);
+    border-color: var(--cor-acento-hover);
     color: #ffffff;
 }
 
@@ -197,7 +197,7 @@ nav ul li a:hover {
 }
 
 .btn-nav {
-    background-color: #e94560;
+    background-color: var(--cor-acento);
     color: #ffffff !important;
     font-family: 'Oswald', Arial, sans-serif;
     font-weight: 600;
@@ -209,16 +209,16 @@ nav ul li a:hover {
 }
 
 .btn-nav:hover {
-    background-color: #c73650 !important;
+    background-color: var(--cor-acento-hover) !important;
 }
 
 .btn-nav.ativo {
-    background-color: #c73650;
+    background-color: var(--cor-acento-hover);
 }
 
 /* ===== HERO ===== */
 .hero {
-    background: linear-gradient(135deg, var(--cor-primaria) 0%, #16213e 55%, #0f3460 100%);
+    background: linear-gradient(135deg, var(--cor-primaria) 0%, #16213e 55%, var(--cor-primaria-deep) 100%);
     min-height: 540px;
     display: flex;
     align-items: center;
@@ -294,7 +294,7 @@ nav ul li a:hover {
 }
 
 .card:hover {
-    border-top-color: #e94560;
+    border-top-color: var(--cor-acento);
     transform: translateY(-6px);
     box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
 }
@@ -308,7 +308,7 @@ nav ul li a:hover {
 .icone-eletrica { color: #f5a623; }
 .icone-ar       { color: #3a86ff; }
 .icone-bateria  { color: #06d6a0; }
-.icone-socorro  { color: #e94560; }
+.icone-socorro  { color: var(--cor-acento); }
 
 .card h3 {
     font-family: 'Oswald', Arial, sans-serif;
@@ -372,7 +372,7 @@ nav ul li a:hover {
     content: '✔';
     position: absolute;
     left: 0;
-    color: #e94560;
+    color: var(--cor-acento);
     font-weight: bold;
 }
 
@@ -593,7 +593,7 @@ footer {
 
 /* ===== PÁGINA DE CADASTRO ===== */
 .pagina-topo {
-    background: linear-gradient(135deg, var(--cor-primaria) 0%, #0f3460 100%);
+    background: linear-gradient(135deg, var(--cor-primaria) 0%, var(--cor-primaria-deep) 100%);
     padding: 60px 24px;
     text-align: center;
 }
@@ -669,7 +669,7 @@ footer {
 }
 
 .form-contato-rapido a:hover {
-    color: #e94560;
+    color: var(--cor-acento);
 }
 
 .form-cadastro {
@@ -734,7 +734,7 @@ textarea {
 input:focus,
 select:focus,
 textarea:focus {
-    border-color: #e94560;
+    border-color: var(--cor-acento);
     box-shadow: 0 0 0 3px rgba(233, 69, 96, 0.1);
     background-color: #ffffff;
 }
@@ -749,7 +749,7 @@ textarea {
 }
 
 .obrigatorio {
-    color: #e94560;
+    color: var(--cor-acento);
 }
 
 .form-divisor {
@@ -810,7 +810,7 @@ textarea {
 }
 
 .login-marca {
-    background: linear-gradient(160deg, var(--cor-primaria) 0%, #0f3460 100%);
+    background: linear-gradient(160deg, var(--cor-primaria) 0%, var(--cor-primaria-deep) 100%);
     padding: 60px 40px;
     display: flex;
     flex-direction: column;
@@ -898,12 +898,12 @@ textarea {
 }
 
 .login-links a {
-    color: #e94560;
+    color: var(--cor-acento);
     transition: color 0.3s ease;
 }
 
 .login-links a:hover {
-    color: #c73650;
+    color: var(--cor-acento-hover);
 }
 
 .login-links span {
