@@ -39,8 +39,8 @@ ul {
     --cor-primaria:         #1a1a2e;
     --cor-primaria-deep:    #0f3460;
     --cor-footer:           #0d0d1a;
-    --cor-acento:           #e94560;
-    --cor-acento-hover:     #c73650;
+    --cor-acento:           #c0002e;
+    --cor-acento-hover:     #a00025;
     --cor-destaque:         #f5a623;
     --cor-fundo:            #ffffff;
     --cor-fundo-claro:      #f4f6f8;
@@ -727,7 +727,7 @@ textarea {
     font-size: 0.95rem;
     color: var(--cor-texto);
     background-color: #f9fafb;
-    border: 1.5px solid #dde1e7;
+    border: 1.5px solid #949494;
     border-radius: 4px;
     padding: 12px 14px;
     width: 100%;
@@ -863,7 +863,7 @@ textarea {
 
 .login-subtitulo {
     font-size: 0.88rem;
-    color: #06d6a0;
+    color: #007a6e;
     margin-bottom: 28px;
     font-weight: 500;
 }
