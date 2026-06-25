@@ -11,6 +11,15 @@
 </head>
 <body>
 
+    <div class="barra-acessibilidade" role="toolbar" aria-label="Controles de acessibilidade">
+        <span class="barra-label">Acessibilidade:</span>
+        <button id="btn-alto-contraste" aria-pressed="false">Alto contraste</button>
+        <button id="btn-aumentar-fonte" aria-label="Aumentar tamanho do texto">A+</button>
+        <button id="btn-diminuir-fonte" aria-label="Diminuir tamanho do texto">A−</button>
+        <button id="btn-aumentar-espaco" aria-pressed="false">Espaçamento +</button>
+        <button id="btn-espaco-padrao">Espaçamento padrão</button>
+    </div>
+
     <header>
         <div class="header-container">
             <div class="logo">
@@ -48,11 +57,13 @@
                     <form action="#" method="post" class="form-login">
                         <div class="form-grupo">
                             <label for="login-email">E-mail</label>
-                            <input type="email" id="login-email" name="email" placeholder="seu@email.com" required>
+                            <input type="email" id="login-email" name="email" placeholder="seu@email.com" required aria-describedby="login-email-erro">
+                            <span id="login-email-erro" class="mensagem-erro" role="alert" aria-live="polite"></span>
                         </div>
                         <div class="form-grupo">
                             <label for="login-senha">Senha</label>
-                            <input type="password" id="login-senha" name="senha" placeholder="Digite sua senha" required>
+                            <input type="password" id="login-senha" name="senha" placeholder="Digite sua senha" required aria-describedby="login-senha-erro">
+                            <span id="login-senha-erro" class="mensagem-erro" role="alert" aria-live="polite"></span>
                         </div>
                         <div class="form-checkbox">
                             <input type="checkbox" id="lembrar" name="lembrar">
@@ -109,5 +120,6 @@
         </div>
     </footer>
 
+    <script src="app.js"></script>
 </body>
 </html>

@@ -12,8 +12,8 @@ html {
 body {
     font-family: 'Roboto', Arial, sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.7;
+    font-size: calc(16px * var(--escala-fonte));
+    line-height: var(--espacamento-linha);
     color: var(--cor-texto);
     background-color: var(--cor-fundo);
 }
@@ -47,6 +47,10 @@ ul {
     --cor-texto:            #333333;
     --cor-texto-secundario: #666666;
     --cor-texto-muted:      #aabbcc;
+
+    /* Acessibilidade 5.12.1–5.12.4 e 5.12.7 */
+    --espacamento-linha:    1.7;
+    --escala-fonte:         1;
 }
 
 /* ===== UTILITÁRIOS ===== */
@@ -945,4 +949,103 @@ textarea:focus-visible {
 .contato-cta p,
 .footer-marca p {
     max-width: 70ch;
+}
+
+/* ===== ACESSIBILIDADE — BARRA DE CONTROLES (itens 5.11.1–5.12.7) ===== */
+.barra-acessibilidade {
+    background-color: var(--cor-footer);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 24px;
+}
+
+.barra-label {
+    color: #667788;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-right: 4px;
+}
+
+.barra-acessibilidade button {
+    background: transparent;
+    color: #aabbcc;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 3px;
+    padding: 3px 9px;
+    cursor: pointer;
+    font-size: 0.78rem;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.4;
+    transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.barra-acessibilidade button:hover,
+.barra-acessibilidade button[aria-pressed="true"] {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.45);
+    background-color: rgba(255, 255, 255, 0.07);
+}
+
+/* ===== ACESSIBILIDADE — MENSAGENS DE ERRO (item 5.11.1) ===== */
+.mensagem-erro {
+    color: var(--cor-acento);
+    font-size: 0.82rem;
+    font-weight: 600;
+    display: block;
+    margin-top: 4px;
+    min-height: 1.2em;
+}
+
+.mensagem-erro:not(:empty)::before {
+    content: "⚠ ";
+}
+
+input[aria-invalid="true"],
+select[aria-invalid="true"],
+textarea[aria-invalid="true"] {
+    border-color: var(--cor-acento);
+    box-shadow: 0 0 0 2px rgba(233, 69, 96, 0.18);
+}
+
+/* ===== ACESSIBILIDADE — ALTO CONTRASTE (item 5.11.2–5.11.4) ===== */
+body.alto-contraste {
+    --cor-texto:            #000000;
+    --cor-fundo:            #ffffff;
+    --cor-fundo-claro:      #ffffff;
+    --cor-acento:           #b00020;
+    --cor-acento-hover:     #900010;
+    --cor-texto-secundario: #000000;
+    --cor-texto-muted:      #111111;
+    --cor-primaria:         #000066;
+    --cor-primaria-deep:    #000044;
+    --cor-footer:           #000000;
+    --cor-destaque:         #994400;
+}
+
+body.alto-contraste .login-subtitulo {
+    color: #005500;
+}
+
+body.alto-contraste .sobre-texto p,
+body.alto-contraste .lista-diferenciais li {
+    color: #000000;
+}
+
+body.alto-contraste label {
+    color: #000000;
+}
+
+/* ===== ACESSIBILIDADE — ESPAÇAMENTO AMPLIADO (itens 5.12.1–5.12.4) ===== */
+body.espacamento-ampliado {
+    --espacamento-linha: 2;
+    letter-spacing: 0.12em;
+    word-spacing: 0.16em;
+}
+
+body.espacamento-ampliado p,
+body.espacamento-ampliado li {
+    margin-bottom: 2.5em;
 }
