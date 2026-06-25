@@ -41,10 +41,10 @@ ul {
     --cor-footer:           #0d0d1a;
     --cor-acento:           var(--cor-acento);
     --cor-acento-hover:     var(--cor-acento-hover);
-    --cor-destaque:         #f5a623;
+    --cor-destaque:         var(--cor-destaque);
     --cor-fundo:            #ffffff;
-    --cor-fundo-claro:      #f4f6f8;
-    --cor-texto:            #333333;
+    --cor-fundo-claro:      var(--cor-fundo-claro);
+    --cor-texto:            var(--cor-texto);
     --cor-texto-secundario: #666666;
     --cor-texto-muted:      #aabbcc;
 }
@@ -157,7 +157,7 @@ header {
 
 .logo-icon {
     font-size: 2rem;
-    color: #f5a623;
+    color: var(--cor-destaque);
 }
 
 .logo-texto h1 {
@@ -172,7 +172,7 @@ header {
 
 .logo-slogan {
     font-size: 0.72rem;
-    color: #f5a623;
+    color: var(--cor-destaque);
     letter-spacing: 0.5px;
 }
 
@@ -255,7 +255,7 @@ nav ul li a:hover {
 }
 
 .hero-conteudo h2 span {
-    color: #f5a623;
+    color: var(--cor-destaque);
 }
 
 .hero-conteudo p {
@@ -273,7 +273,7 @@ nav ul li a:hover {
 
 /* ===== SERVIÇOS ===== */
 .servicos {
-    background-color: #f4f6f8;
+    background-color: var(--cor-fundo-claro);
     padding: 80px 0;
 }
 
@@ -305,7 +305,7 @@ nav ul li a:hover {
     display: block;
 }
 
-.icone-eletrica { color: #f5a623; }
+.icone-eletrica { color: var(--cor-destaque); }
 .icone-ar       { color: #3a86ff; }
 .icone-bateria  { color: #06d6a0; }
 .icone-socorro  { color: var(--cor-acento); }
@@ -378,7 +378,7 @@ nav ul li a:hover {
 
 /* ===== GALERIA ===== */
 .galeria {
-    background-color: #f4f6f8;
+    background-color: var(--cor-fundo-claro);
     padding: 80px 0;
 }
 
@@ -416,7 +416,7 @@ nav ul li a:hover {
     font-family: 'Oswald', Arial, sans-serif;
     font-size: 0.95rem;
     font-weight: 600;
-    color: #f5a623;
+    color: var(--cor-destaque);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -434,7 +434,7 @@ nav ul li a:hover {
 }
 
 .contato .titulo-secao::after {
-    background-color: #f5a623;
+    background-color: var(--cor-destaque);
 }
 
 .contato-grid {
@@ -460,7 +460,7 @@ nav ul li a:hover {
     font-family: 'Oswald', Arial, sans-serif;
     font-size: 0.95rem;
     font-weight: 600;
-    color: #f5a623;
+    color: var(--cor-destaque);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: 4px;
@@ -478,7 +478,7 @@ nav ul li a:hover {
 }
 
 .info-item a:hover {
-    color: #f5a623;
+    color: var(--cor-destaque);
 }
 
 .contato-cta {
@@ -529,7 +529,7 @@ footer {
 
 .footer-icone {
     font-size: 2.2rem;
-    color: #f5a623;
+    color: var(--cor-destaque);
 }
 
 .footer-marca h3 {
@@ -551,7 +551,7 @@ footer {
     font-family: 'Oswald', Arial, sans-serif;
     font-size: 1rem;
     font-weight: 600;
-    color: #f5a623;
+    color: var(--cor-destaque);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: 16px;
@@ -571,7 +571,7 @@ footer {
 
 .footer-links ul li a:hover,
 .footer-equipe ul li a:hover {
-    color: #f5a623;
+    color: var(--cor-destaque);
 }
 
 .footer-ra {
@@ -615,7 +615,7 @@ footer {
 
 .cadastro-section {
     padding: 64px 0;
-    background-color: #f4f6f8;
+    background-color: var(--cor-fundo-claro);
 }
 
 .form-wrapper {
@@ -636,7 +636,7 @@ footer {
     font-family: 'Oswald', Arial, sans-serif;
     font-size: 1.3rem;
     font-weight: 600;
-    color: #f5a623;
+    color: var(--cor-destaque);
     text-transform: uppercase;
     margin-bottom: 20px;
 }
@@ -664,7 +664,7 @@ footer {
     font-family: 'Oswald', Arial, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #f5a623;
+    color: var(--cor-destaque);
     transition: color 0.3s ease;
 }
 
@@ -688,7 +688,7 @@ footer {
     letter-spacing: 0.5px;
     margin-bottom: 28px;
     padding-bottom: 14px;
-    border-bottom: 2px solid #f4f6f8;
+    border-bottom: 2px solid var(--cor-fundo-claro);
 }
 
 .form-grupo {
@@ -721,7 +721,7 @@ select,
 textarea {
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 0.95rem;
-    color: #333333;
+    color: var(--cor-texto);
     background-color: #f9fafb;
     border: 1.5px solid #dde1e7;
     border-radius: 4px;
@@ -791,7 +791,7 @@ textarea {
 
 /* ===== PÁGINA DE LOGIN ===== */
 .login-section {
-    background: linear-gradient(135deg, #f4f6f8 0%, #e8ecf2 100%);
+    background: linear-gradient(135deg, var(--cor-fundo-claro) 0%, #e8ecf2 100%);
     min-height: calc(100vh - 76px - 220px);
     display: flex;
     align-items: center;
@@ -820,7 +820,7 @@ textarea {
 
 .login-icone {
     font-size: 3.5rem;
-    color: #f5a623;
+    color: var(--cor-destaque);
 }
 
 .login-marca h2 {
