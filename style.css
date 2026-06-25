@@ -14,8 +14,8 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    color: #333333;
-    background-color: #ffffff;
+    color: var(--cor-texto);
+    background-color: var(--cor-fundo);
 }
 
 img {
@@ -36,7 +36,7 @@ ul {
 
 /* ===== VARIÁVEIS DE COR ===== */
 :root {
-    --cor-primaria:         #1a1a2e;
+    --cor-primaria:         var(--cor-primaria);
     --cor-primaria-deep:    #0f3460;
     --cor-footer:           #0d0d1a;
     --cor-acento:           #e94560;
@@ -60,7 +60,7 @@ ul {
     font-family: 'Oswald', Arial, sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--cor-primaria);
     margin-bottom: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -127,12 +127,12 @@ ul {
 
 .btn-secundario:hover {
     background-color: #ffffff;
-    color: #1a1a2e;
+    color: var(--cor-primaria);
 }
 
 /* ===== HEADER ===== */
 header {
-    background-color: #1a1a2e;
+    background-color: var(--cor-primaria);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -218,7 +218,7 @@ nav ul li a:hover {
 
 /* ===== HERO ===== */
 .hero {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 55%, #0f3460 100%);
+    background: linear-gradient(135deg, var(--cor-primaria) 0%, #16213e 55%, #0f3460 100%);
     min-height: 540px;
     display: flex;
     align-items: center;
@@ -314,7 +314,7 @@ nav ul li a:hover {
     font-family: 'Oswald', Arial, sans-serif;
     font-size: 1.2rem;
     font-weight: 600;
-    color: #1a1a2e;
+    color: var(--cor-primaria);
     text-transform: uppercase;
     margin-bottom: 12px;
 }
@@ -392,7 +392,7 @@ nav ul li a:hover {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-    background-color: #1a1a2e;
+    background-color: var(--cor-primaria);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -420,13 +420,13 @@ nav ul li a:hover {
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    background-color: #1a1a2e;
+    background-color: var(--cor-primaria);
 }
 
 /* ===== CONTATO ===== */
 .contato {
     padding: 80px 0;
-    background-color: #1a1a2e;
+    background-color: var(--cor-primaria);
 }
 
 .contato .titulo-secao {
@@ -593,7 +593,7 @@ footer {
 
 /* ===== PÁGINA DE CADASTRO ===== */
 .pagina-topo {
-    background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+    background: linear-gradient(135deg, var(--cor-primaria) 0%, #0f3460 100%);
     padding: 60px 24px;
     text-align: center;
 }
@@ -626,7 +626,7 @@ footer {
 }
 
 .form-info {
-    background-color: #1a1a2e;
+    background-color: var(--cor-primaria);
     border-radius: 8px;
     padding: 36px 28px;
     color: #ffffff;
@@ -683,7 +683,7 @@ footer {
     font-family: 'Oswald', Arial, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--cor-primaria);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: 28px;
@@ -771,7 +771,7 @@ textarea {
     font-family: 'Oswald', Arial, sans-serif;
     font-size: 0.9rem;
     font-weight: 600;
-    color: #1a1a2e;
+    color: var(--cor-primaria);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     white-space: nowrap;
@@ -810,7 +810,7 @@ textarea {
 }
 
 .login-marca {
-    background: linear-gradient(160deg, #1a1a2e 0%, #0f3460 100%);
+    background: linear-gradient(160deg, var(--cor-primaria) 0%, #0f3460 100%);
     padding: 60px 40px;
     display: flex;
     flex-direction: column;
@@ -851,7 +851,7 @@ textarea {
     font-family: 'Oswald', Arial, sans-serif;
     font-size: 1.5rem;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--cor-primaria);
     text-transform: uppercase;
     letter-spacing: 0.5px;
     margin-bottom: 8px;
@@ -916,13 +916,13 @@ textarea {
 }
 
 .login-voltar .btn-secundario {
-    color: #1a1a2e;
-    border-color: #1a1a2e;
+    color: var(--cor-primaria);
+    border-color: var(--cor-primaria);
     font-size: 0.88rem;
     padding: 10px 20px;
 }
 
 .login-voltar .btn-secundario:hover {
-    background-color: #1a1a2e;
+    background-color: var(--cor-primaria);
     color: #ffffff;
 }
