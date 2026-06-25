@@ -45,8 +45,8 @@ ul {
     --cor-fundo:            #ffffff;
     --cor-fundo-claro:      var(--cor-fundo-claro);
     --cor-texto:            var(--cor-texto);
-    --cor-texto-secundario: #666666;
-    --cor-texto-muted:      #aabbcc;
+    --cor-texto-secundario: var(--cor-texto-secundario);
+    --cor-texto-muted:      var(--cor-texto-muted);
 }
 
 /* ===== UTILITÁRIOS ===== */
@@ -76,7 +76,7 @@ ul {
 }
 
 .subtitulo-secao {
-    color: #666666;
+    color: var(--cor-texto-secundario);
     font-size: 1rem;
     margin-bottom: 40px;
 }
@@ -260,7 +260,7 @@ nav ul li a:hover {
 
 .hero-conteudo p {
     font-size: 1.1rem;
-    color: #aabbcc;
+    color: var(--cor-texto-muted);
     margin-bottom: 36px;
     line-height: 1.8;
 }
@@ -320,7 +320,7 @@ nav ul li a:hover {
 }
 
 .card p {
-    color: #666666;
+    color: var(--cor-texto-secundario);
     font-size: 0.92rem;
     line-height: 1.7;
 }
@@ -467,13 +467,13 @@ nav ul li a:hover {
 }
 
 .info-item p {
-    color: #aabbcc;
+    color: var(--cor-texto-muted);
     font-size: 0.95rem;
     line-height: 1.6;
 }
 
 .info-item a {
-    color: #aabbcc;
+    color: var(--cor-texto-muted);
     transition: color 0.3s ease;
 }
 
@@ -501,7 +501,7 @@ nav ul li a:hover {
 }
 
 .contato-cta p {
-    color: #aabbcc;
+    color: var(--cor-texto-muted);
     margin-bottom: 28px;
     line-height: 1.8;
 }
@@ -509,7 +509,7 @@ nav ul li a:hover {
 /* ===== FOOTER ===== */
 footer {
     background-color: #0d0d1a;
-    color: #aabbcc;
+    color: var(--cor-texto-muted);
     padding: 56px 0 0;
 }
 
@@ -564,7 +564,7 @@ footer {
 
 .footer-links ul li a,
 .footer-equipe ul li a {
-    color: #aabbcc;
+    color: var(--cor-texto-muted);
     font-size: 0.9rem;
     transition: color 0.3s ease;
 }
@@ -609,7 +609,7 @@ footer {
 }
 
 .pagina-topo p {
-    color: #aabbcc;
+    color: var(--cor-texto-muted);
     font-size: 1rem;
 }
 
@@ -643,7 +643,7 @@ footer {
 
 .form-info ul li {
     padding: 8px 0;
-    color: #aabbcc;
+    color: var(--cor-texto-muted);
     font-size: 0.92rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.07);
 }
@@ -656,7 +656,7 @@ footer {
 
 .form-contato-rapido p {
     font-size: 0.9rem;
-    color: #aabbcc;
+    color: var(--cor-texto-muted);
     margin-bottom: 6px;
 }
 
@@ -834,7 +834,7 @@ textarea {
 }
 
 .login-marca p {
-    color: #aabbcc;
+    color: var(--cor-texto-muted);
     font-size: 0.95rem;
     line-height: 1.8;
 }
@@ -882,7 +882,7 @@ textarea {
 
 .form-checkbox label {
     font-size: 0.88rem;
-    color: #666666;
+    color: var(--cor-texto-secundario);
     margin-bottom: 0;
     text-transform: none;
     letter-spacing: 0;
