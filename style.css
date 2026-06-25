@@ -36,17 +36,17 @@ ul {
 
 /* ===== VARIÁVEIS DE COR ===== */
 :root {
-    --cor-primaria:         var(--cor-primaria);
-    --cor-primaria-deep:    var(--cor-primaria-deep);
+    --cor-primaria:         #1a1a2e;
+    --cor-primaria-deep:    #0f3460;
     --cor-footer:           #0d0d1a;
-    --cor-acento:           var(--cor-acento);
-    --cor-acento-hover:     var(--cor-acento-hover);
-    --cor-destaque:         var(--cor-destaque);
+    --cor-acento:           #e94560;
+    --cor-acento-hover:     #c73650;
+    --cor-destaque:         #f5a623;
     --cor-fundo:            #ffffff;
-    --cor-fundo-claro:      var(--cor-fundo-claro);
-    --cor-texto:            var(--cor-texto);
-    --cor-texto-secundario: var(--cor-texto-secundario);
-    --cor-texto-muted:      var(--cor-texto-muted);
+    --cor-fundo-claro:      #f4f6f8;
+    --cor-texto:            #333333;
+    --cor-texto-secundario: #666666;
+    --cor-texto-muted:      #aabbcc;
 }
 
 /* ===== UTILITÁRIOS ===== */
@@ -508,7 +508,7 @@ nav ul li a:hover {
 
 /* ===== FOOTER ===== */
 footer {
-    background-color: #0d0d1a;
+    background-color: var(--cor-footer);
     color: var(--cor-texto-muted);
     padding: 56px 0 0;
 }
