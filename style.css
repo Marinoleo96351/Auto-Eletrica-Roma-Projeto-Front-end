@@ -35,14 +35,19 @@ ul {
 }
 
 /* ===== VARIÁVEIS DE COR ===== */
-/* Paleta:
-   Azul escuro (primário): #1a1a2e
-   Vermelho (acento):      #e94560
-   Laranja/dourado:        #f5a623
-   Cinza claro (fundo):    #f4f6f8
-   Branco:                 #ffffff
-   Texto escuro:           #333333
-*/
+:root {
+    --cor-primaria:         #1a1a2e;
+    --cor-primaria-deep:    #0f3460;
+    --cor-footer:           #0d0d1a;
+    --cor-acento:           #e94560;
+    --cor-acento-hover:     #c73650;
+    --cor-destaque:         #f5a623;
+    --cor-fundo:            #ffffff;
+    --cor-fundo-claro:      #f4f6f8;
+    --cor-texto:            #333333;
+    --cor-texto-secundario: #666666;
+    --cor-texto-muted:      #aabbcc;
+}
 
 /* ===== UTILITÁRIOS ===== */
 .container {
