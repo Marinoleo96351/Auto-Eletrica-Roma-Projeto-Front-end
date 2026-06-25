@@ -926,3 +926,23 @@ textarea {
     background-color: var(--cor-primaria);
     color: #ffffff;
 }
+
+/* ===== ACESSIBILIDADE — FOCO VISÍVEL (ABNT NBR 17225:2025 item 5.11.6) ===== */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--cor-acento);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* ===== ACESSIBILIDADE — LARGURA DE BLOCOS DE TEXTO (item 5.12.6) ===== */
+.hero-conteudo p,
+.subtitulo-secao,
+.sobre-texto p,
+.contato-cta p,
+.footer-marca p {
+    max-width: 70ch;
+}
